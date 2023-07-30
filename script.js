@@ -1,23 +1,20 @@
-let display = document.getElementById('display');
-let currentNumber = '';
+let displayValue = "";
 
 function appendToDisplay(value) {
-    currentNumber += value;
-    display.value = currentNumber;
-}
-
-function clearDisplay() {
-    currentNumber = '';
-    display.value = '';
+    displayValue += value;
+    document.getElementById("display").value = displayValue;
 }
 
 function calculate() {
     try {
-        const result = eval(currentNumber);
-        display.value = result;
-        currentNumber = result.toString();
+        displayValue = eval(displayValue);
+        document.getElementById("display").value = displayValue;
     } catch (error) {
-        display.value = 'Error';
-        currentNumber = '';
+        document.getElementById("display").value = "Error";
     }
+}
+
+function clearDisplay() {
+    displayValue = "";
+    document.getElementById("display").value = displayValue;
 }
