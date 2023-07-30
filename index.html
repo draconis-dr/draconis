@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cyberpunk Calculator</title>
+    <title>Graphic Designer Portfolio</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #000;
-            color: #0ff;
-            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
             text-align: center;
         }
 
-        #calculator {
-            background-color: #222;
-            border: 2px solid #0ff;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 50px auto;
-            width: 300px;
+        header h1 {
+            font-size: 36px;
+            color: #fff;
         }
 
-        #display {
-            width: 100%;
-            padding: 10px;
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
             font-size: 20px;
-            text-align: right;
-            background-color: #111;
-            border: none;
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #fff;
+            color: #000;
+            margin: 20px;
             border-radius: 5px;
-            color: #0ff;
         }
 
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 5px;
-            margin-top: 10px;
+        section h2 {
+            font-size: 30px;
+            color: #000;
         }
 
-        button {
-            background-color: #333;
-            color: #0ff;
-            border: none;
-            border-radius: 5px;
-            padding: 15px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.2s;
+        .project {
+            margin-bottom: 30px;
         }
 
-        button:hover {
-            background-color: #555;
-        }
-
-        button:active {
-            background-color: #777;
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <button onclick="document.getElementById('display').value = ''">C</button>
-            <button onclick="document.getElementById('display').value += '7'">7</button>
-            <button onclick="document.getElementById('display').value += '8'">8</button>
-            <button onclick="document.getElementById('display').value += '9'">9</button>
-            <button onclick="document.getElementById('display').value += '/'">/</button>
-            <button onclick="document.getElementById('display').value += '4'">4</button>
-            <button onclick="document.getElementById('display').value += '5'">5</button>
-            <button onclick="document.getElementById('display').value += '6'">6</button>
-            <button onclick="document.getElementById('display').value += '*'">*</button>
-            <button onclick="document.getElementById('display').value += '1'">1</button>
-            <button onclick="document.getElementById('display').value += '2'">2</button>
-            <button onclick="document.getElementById('display').value += '3'">3</button>
-            <button onclick="document.getElementById('display').value += '-'">-</button>
-            <button onclick="document.getElementById('display').value += '0'">0</button>
-            <button onclick="document.getElementById('display').value += '.'">.</button>
-            <button onclick="document.getElementById('display').value += '+'">+</button>
-            <button onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">=</button>
+    <header>
+        <h1>Graphic Designer Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate graphic designer with a keen eye for aesthetics and a strong creative vision. My work encompasses a wide range of design projects, from branding and illustration to web and print design. I enjoy experimenting with different styles and techniques to create visually appealing and impactful designs.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>
+                Logo Design for XYZ Company
+                <br>
+                <img src="project1.jpg" alt="Project 1">
+            </p>
         </div>
-    </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>
+                Website Redesign for ABC Agency
+                <br>
+                <img src="project2.jpg" alt="Project 2">
+            </p>
+        </div>
+        <!-- Add more project sections as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            You can reach me at: your@email.com
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Graphic Designer Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
