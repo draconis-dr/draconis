@@ -3,6 +3,24 @@
 <head>
     <title>Graphic Designer Portfolio</title>
     <style>
+        .snowflake {
+            animation: shake 2s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px) rotate(10deg);
+            }
+            100% {
+                transform: translateX(-10px) rotate(-10deg);
+            }
+        }
+    </style>
+    
+    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -114,8 +132,11 @@
         </p>
     </section>
     
-    <section id="projects">
-        <h2>Love you pyoung kyi</h2>  
+    <section id="love">
+        <h2>Love you pyoung kyi</h2>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
     </section>        
     
     <footer>
