@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyberpunk Calculator</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #calculator {
+            background-color: #222;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 50px auto;
+            width: 300px;
+        }
+
+        #display {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            text-align: right;
+            background-color: #111;
+            border: none;
+            border-radius: 5px;
+            color: #0ff;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #0ff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button:active {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="document.getElementById('display').value = ''">C</button>
+            <button onclick="document.getElementById('display').value += '7'">7</button>
+            <button onclick="document.getElementById('display').value += '8'">8</button>
+            <button onclick="document.getElementById('display').value += '9'">9</button>
+            <button onclick="document.getElementById('display').value += '/'">/</button>
+            <button onclick="document.getElementById('display').value += '4'">4</button>
+            <button onclick="document.getElementById('display').value += '5'">5</button>
+            <button onclick="document.getElementById('display').value += '6'">6</button>
+            <button onclick="document.getElementById('display').value += '*'">*</button>
+            <button onclick="document.getElementById('display').value += '1'">1</button>
+            <button onclick="document.getElementById('display').value += '2'">2</button>
+            <button onclick="document.getElementById('display').value += '3'">3</button>
+            <button onclick="document.getElementById('display').value += '-'">-</button>
+            <button onclick="document.getElementById('display').value += '0'">0</button>
+            <button onclick="document.getElementById('display').value += '.'">.</button>
+            <button onclick="document.getElementById('display').value += '+'">+</button>
+            <button onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">=</button>
+        </div>
+    </div>
+</body>
+</html>
