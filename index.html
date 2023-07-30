@@ -3,21 +3,6 @@
 <head>
     <title>Graphic Designer Portfolio</title>
     <style>
-       @keyframes shake {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        
-        #love {
-            animation: fade-in 2s;
-        }
-    </style>
-    
-    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -76,6 +61,21 @@
             background-color: #000;
             padding: 10px;
             text-align: center;
+        }
+
+        /* Additional style for the fade-in animation */
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the fade-in animation to the "love" section */
+        #love {
+            animation: fade-in 2s;
         }
     </style>
 </head>
