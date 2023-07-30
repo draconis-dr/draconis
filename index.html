@@ -9,14 +9,15 @@
 
         @keyframes shake {
             0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(10px) rotate(10deg);
+                opacity: 0;
             }
             100% {
-                transform: translateX(-10px) rotate(-10deg);
+                opacity: 1;
             }
+        }
+        
+        #love {
+            animation: fade-in 2s;
         }
     </style>
     
@@ -126,17 +127,11 @@
         <h2>Contact Me</h2>
         <p>
             You can reach me at:@hatakehouki926@gmail.com
-        <p>
-                                +1 567 098 234
-
         </p>
     </section>
     
     <section id="love">
         <h2>Love you pyoung kyi</h2>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
-        <div class="snowflake">❄️</div>
     </section>        
     
     <footer>
